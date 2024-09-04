@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "GoodTour";
+    Layout = null;
+
+}
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: #007BFF;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        color: white;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+                transition: background 0.3s;
+            }
+
+                nav ul li a:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border-radius: 5px;
+                }
+
+    .hero-section {
+        background-image: url('hero-image.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+    .btn {
+        background-color: #FF5733;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #FF4500;
+        }
+
+    .tours-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+        .tours-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+    .tour-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .tour-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        margin: 20px;
+        transition: transform 0.3s;
+    }
+
+        .tour-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .tour-card h3 {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .tour-card p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #007BFF;
+        }
+
+        .tour-card:hover {
+            transform: scale(1.05);
+        }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Good Travel</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Explore the World with Us</h1>
+            <p>Discover amazing destinations at exclusive deals.</p>
+            <a href="#tours" class="btn">View Tours</a>
+        </div>
+    </section>
+
+    <section id="tours" class="tours-section">
+        <h2>Popular Tours</h2>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <img src="tour1.jpg" alt="Tour 1">
+                <h3>Paris Adventure</h3>
+                <p>5 days | $1200</p>
+            </div>
+            <div class="tour-card">
+                <img src="tour2.jpg" alt="Tour 2">
+                <h3>New York Explorer</h3>
+                <p>7 days | $1500</p>
+            </div>
+            <div class="tour-card">
+                <img src="tour3.jpg" alt="Tour 3">
+                <h3>Bali Getaway</h3>
+                <p>10 days | $1800</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Good Tour. All rights reserved.</p>
+    </footer>
+</body>
+</html>
